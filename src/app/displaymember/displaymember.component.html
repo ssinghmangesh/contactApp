@@ -1,0 +1,48 @@
+<div class="container clearfix">
+  <div class="people-list" id="people-list">
+    <div class="search">
+      <a routerLink="/add" class="add">Add Contact</a>
+    </div>
+    <ul class="list">
+      <li class="clearfix member" *ngFor="let person of people">
+        <div class="asas" (click)="onClick(person)">
+          <img src="assets/image/default.png" alt="avatar" />
+          <div class="about">
+            <div class="name">{{ person }}</div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="chat">
+    <div class="chat-header clearfix">
+      <img src="assets/image/default.png" *ngIf="flag" alt="avatar" />
+
+      <div class="chat-about">
+        <div class="chat-with" *ngIf="flag"> {{ fname }} {{ lname }} </div>
+      </div>
+
+    </div>
+    <!-- end chat-header -->
+
+    <div class="chat-header clearfix" style="height: 516px;">
+      <br />
+      <div class="chat-with"  *ngIf="flag">First Name : {{ fname }} </div>
+      <br />
+      <div class="chat-with"  *ngIf="flag">Last Name : {{ lname }} </div>
+      <br />
+      <div class="chat-with"  *ngIf="flag">Email : {{ email }} </div>
+      <br />
+      <div class="chat-with"  *ngIf="flag">Mobile : {{ mobile }} </div>
+      <br />
+      <button class="btn" *ngIf="flag" (click)="edit(fname)">Edit</button>
+      <button class="btn"  *ngIf="flag" (click)="delete(fname)">Delete</button>
+    </div>
+
+  </div>
+
+
+</div>
+<!-- end container -->
+<router-outlet></router-outlet>

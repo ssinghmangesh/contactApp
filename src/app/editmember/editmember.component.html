@@ -1,0 +1,32 @@
+<div class="container">
+    <form #contactform="ngForm" (ngSubmit)="editContact(contactform)">
+      <div class="con-group">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" [(ngModel)]="fname" placeholder="Your name..">
+      </div>
+  
+      <div class="con-group">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" [(ngModel)]="lname" placeholder="Your last name..">
+      </div>
+  
+      <div class="con-group">
+        <label for="lname">Mobile </label>
+        <input type="text" id="mobile" name="mobile" [(ngModel)]="mobile" placeholder="Your mobile..">
+      </div>
+  
+      <div class="con-group">
+        <label for="lname">Email</label>
+        <input type="text" id="email" name="email" [(ngModel)]="email" placeholder="Your email..">
+      </div>
+      <div class="con-group">
+        <input type="submit" value="Submit">
+  <a routerLink="../../display" class="add">Display Contact</a>        
+      </div>
+    </form>
+  </div>
+  
+  
+  
+  
+  <router-outlet></router-outlet>

@@ -2,7 +2,16 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
+.btn{
+  padding: 10px;
+  margin: 10px;
+  background-color: #6A6C75;
+border-radius: 4px;
+border: 1px solid #6A6C75;
+min-width: 100px;
+color: white;
+font-weight: bold;
+}
 body {
   background: #C5DDEB;
   font: 14px/20px "Lato", Arial, sans-serif;
@@ -19,7 +28,8 @@ li{
   width: 750px;
   background: #444753;
   border-radius: 5px;
-  height: 630px;
+  height: 611px;
+  border: 1px solid;
 }
 
 .people-list {
@@ -44,7 +54,8 @@ li{
 }
 .people-list ul {
   padding: 20px;
-  height: 770px;
+  height: 532px;
+  overflow-y: scroll;
 }
 
 .member {
@@ -53,6 +64,9 @@ li{
 }
 .member img {
   float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
 }
 .member .about {
   float: left;
@@ -68,7 +82,7 @@ li{
 
 
 .chat {
-  width: 490px;
+  width: 488px;
   float: left;
   background: #F2F5F8;
   border-top-right-radius: 5px;
@@ -78,9 +92,13 @@ li{
 .chat .chat-header {
   padding: 20px;
   border-bottom: 2px solid white;
+  min-height: 93px;
 }
 .chat .chat-header img {
   float: left;
+  width:50px;
+  height:50px;
+  border-radius: 50px;
 }
 .chat .chat-header .chat-about {
   float: left;
@@ -213,4 +231,9 @@ li{
   content: " ";
   clear: both;
   height: 0;
+}
+
+.asas{
+  color:white;
+  cursor: pointer;
 }

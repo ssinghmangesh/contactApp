@@ -1,0 +1,35 @@
+<div class="container">
+    <form (ngSubmit)="delteContact()">
+      <div class="con-group">
+        <label for="fname">First Name : </label>
+        <label for="fname">{{fname}}</label>
+
+      </div>
+  
+      <div class="con-group">
+        <label for="lname">Last Name : </label>
+        <label for="lname">{{lname}}</label>
+      </div>
+  
+      <div class="con-group">
+        <label for="lname">Mobile : </label>
+        <label for="lname">{{mobile}}</label>
+        
+      </div>
+  
+      <div class="con-group">
+        <label for="lname">Email : </label>
+        <label for="lname">{{email}}</label>
+      </div>
+      <div class="con-group">
+        <input type="submit" value="Delete">
+  <a routerLink="../../display" class="add">Display Contact</a>
+        
+      </div>
+    </form>
+  </div>
+  
+  
+  
+  
+  <router-outlet></router-outlet>
